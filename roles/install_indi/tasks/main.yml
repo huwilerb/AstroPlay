@@ -1,0 +1,17 @@
+---
+
+- name: Add INDI PPA repository
+  apt_repository:
+    repo: "ppa:mutlaqja/ppa"
+    state: present
+
+- name: Update apt cache
+  apt:
+    update_cache: yes
+
+- name: Install INDI and GSC packages
+  apt:
+    name:
+      - indi-full
+      - gsc
+    state: present
