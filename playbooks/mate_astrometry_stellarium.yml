@@ -1,0 +1,12 @@
+---
+- name: Install Astronomy Tools on Raspberry Pi
+  hosts: your_rpi_hostname_or_ip
+  remote_user: your_ssh_username
+  become: yes
+
+  roles:
+    - update_system
+    - install_indi
+    - install_kstars
+    - install_astrometry
+    - install_stellarium
