@@ -1,0 +1,7 @@
+---
+
+- name: Install Stellarium package
+  apt:
+    name: stellarium
+    state: present
+    update_cache: yes
