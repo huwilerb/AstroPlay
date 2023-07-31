@@ -1,0 +1,7 @@
+---
+
+- name: Install Astrometry.net package
+  apt:
+    name: astrometry.net
+    state: present
+    update_cache: yes
